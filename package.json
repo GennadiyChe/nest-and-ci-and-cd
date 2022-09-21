@@ -15,7 +15,7 @@
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
-    "ex": "echo ",
+    "ex": "node foo.js ",
     "rimraf": "./node_modules/rimraf/bin.js",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
