@@ -44,5 +44,5 @@ jobs:
     - run: npm run ex ${{ secrets.SERVER_HOST }}
     - run: npm run build --if-present
     - name: Deploy with rsync
-      run: rsync -avzn -e "ssh -i ~/.ssh/github-actions" ./dist/ root@${{ secrets.SSH_HOST }}:/var/www/cicd/
+      run: rsync -avz -e "ssh -i ~/.ssh/github-actions" ./dist/ root@${{ secrets.SSH_HOST }}:/var/www/cicd/
     - run: npm test 
