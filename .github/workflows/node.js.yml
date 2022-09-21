@@ -50,6 +50,7 @@ jobs:
       with:
         host: ${{ secrets.SSH_HOST }}
         username: root
+        script_stop: true
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /var/www/cicd/
