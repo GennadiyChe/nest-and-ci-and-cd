@@ -54,5 +54,5 @@ jobs:
         script: |
           cd /var/www/cicd/
           pm2 list
-          pm2 restart foo-bar
+          pm2 restart google-chrome
     - run: npm test 
